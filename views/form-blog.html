@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blog Page</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/public/assets/css/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid container-navbar">
+        <a class="navbar-brand" href="/"
+          ><img src="/public/assets/img/logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-left">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/blog">Add Project</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navbar-right">
+            <button type="button" class="btn btn-warning rounded-pill">
+              <a href="/contact">Contact Me</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- form -->
+    <div
+      class="container-fluid d-flex justify-content-center align-items-center mt-5"
+    >
+      <div class="container-form">
+        <h2 class="mb-4">ADD MY PROJECT</h2>
+        <form action="add-blog" method="post">
+          <div class="name mb-3">
+            <label for="project-name" class="form-label">Project Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="project-name"
+              name="title"
+            />
+          </div>
+          <div class="date-p d-flex justify-content-between mb-3">
+            <div class="start-date">
+              <label for="start-date" class="form-label">Start Date</label>
+              <input
+                type="date"
+                class="form-control"
+                id="start-date"
+                name="start-date"
+              />
+            </div>
+            <div class="end-date">
+              <label for="end-date" class="form-label">End Date</label>
+              <input
+                type="date"
+                class="form-control"
+                id="end-date"
+                name="end-date"
+              />
+            </div>
+          </div>
+          <div class="description mb-3">
+            <label for="description-box" class="form-label">Description</label>
+            <textarea
+              class="form-control"
+              id="description-box"
+              name="description"
+              cols="30"
+              rows="3"
+              style="resize: none"
+            ></textarea>
+          </div>
+          <div class="checkbox mb-3">
+            <p>Technologies</p>
+            <div class="form-checkbox d-flex">
+              <div class="form-checkbox1">
+                <div class="nodeJs">
+                  <input
+                    type="checkbox"
+                    name="node-js"
+                    id="nodejs"
+                    class="form-check-input"
+                  />
+                  <label for="nodejs" class="form-check-label">Node JS</label>
+                </div>
+                <div class="reactJs">
+                  <input
+                    type="checkbox"
+                    name="react-js"
+                    id="reactjs"
+                    class="form-check-input"
+                  />
+                  <label for="reactjs" class="form-check-label">React JS</label>
+                </div>
+              </div>
+              <div class="form-checkbox2 ms-5">
+                <div class="nextJs">
+                  <input
+                    type="checkbox"
+                    name="next-js"
+                    id="nextjs"
+                    class="form-check-input"
+                  />
+                  <label for="nextjs" class="form-check-label">Next JS</label>
+                </div>
+                <div class="typeScript">
+                  <input
+                    type="checkbox"
+                    name="typescript"
+                    id="typescript"
+                    class="form-check-input"
+                  />
+                  <label for="typescript" class="form-check-label"
+                    >TypeScript</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="image mb-4">
+            <label for="formFile" class="form-label">Upload Image</label>
+            <input class="form-control" type="file" id="formFile" />
+          </div>
+          <div class="button-group d-flex justify-content-end">
+            <button class="btn btn-warning rounded-pill">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- form end -->
+
+    <div class="blog">
+      <!-- <div class="output-myproject" id="output-myproject">
+            <h1>My Project</h1>
+        </div> -->
+
+      <div class="post-blog" id="post-blog">
+        <!-- <div class="card-blog">
+
+                <div class="content-blog">
+
+                    <div class="thumbnail">
+                        <img src="/public/assets/img/blog-img.png" alt="">
+                    </div>
+                    
+                    <div class="title-blog">
+                        <h3><a href="blog.html">Dumbways Mobile App</a></h3>
+                        <p>durasi : 3 bulan</p>
+                    </div>
+                
+                    <div class="description-output">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, dolorum blanditiis amet praesentium fuga perferendis magnam voluptatum illo atque corporis consequuntur facilis nisi totam, debitis fugiat doloribus obcaecati at nostrum.
+                    </div>
+    
+                    <div class="technologies-output">
+                        <div class="nodejs">
+                            <img src="/public/assets/img/nodejs.png" alt="">
+                        </div>
+                        <div class="nextjs">
+                            <img src="/public/assets/img/nextjs.png" alt="">
+                        </div>
+                        <div class="reactjs">
+                            <img src="/public/assets/img/reactjs.png" alt="">
+                        </div>
+                        <div class="typescript">
+                            <img src="/public/assets/img/typescript.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="opsi-blog">
+                        <div class="edit-blog">
+                            <a href="">edit</a>
+                        </div>
+
+                        <div class="delete-blog">
+                            <a href="">delete</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div> -->
+      </div>
+    </div>
+
+    <!--  bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap end -->
+    <script src="assets/js/blog-page.js"></script>
+  </body>
+</html>
