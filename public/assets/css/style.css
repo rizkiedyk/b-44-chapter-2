@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e2e6ea;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e2e6ea;
+  font-family: "Poppins", sans-serif;
+}
+
+/* navbar */
+
+.navbar {
+  background-color: #f4f3f3 !important;
+}
+
+.container-navbar {
+  width: 100%;
+}
+
+.container-fluid a img {
+  width: 2em;
+}
+
+.navbar-left {
+  width: 50%;
+}
+
+.navbar-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  color: #e9e8e9;
+}
+
+.btn {
+  background-color: #111727 !important;
+  color: #e9e8e9 !important;
+  border: none;
+}
+
+/* navbar end */
+
+.container-project {
+  width: 100%;
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.output-myproject {
+  text-align: center;
+  margin-top: 30px;
+  /* margin-bottom: 30px; */
+}
+
+.post-blog {
+  width: 80%;
+  margin: 50px auto;
+  /* background-color: blueviolet; */
+  display: flex;
+  /* flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center; */
+  flex-wrap: wrap;
+}
+
+.card-blog {
+  /* background-color: blue; */
+  width: 30%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.content-blog {
+  background-color: white;
+  width: 90%;
+  margin: 15px auto;
+  font-size: 10px;
+  padding-bottom: 15px;
+}
+
+/* .thumbnail {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} */
+
+.thumbnail img {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.title-blog {
+  margin-top: 15px;
+  /* background-color: yellow; */
+}
+
+.title-blog h3 {
+  font-size: small;
+  font-weight: bold;
+}
+
+.description-output {
+  margin-top: 20px;
+}
+
+.technologies-output {
+  margin-top: 20px;
+  display: flex;
+}
+
+.technologies-output img {
+  width: 30px;
+  margin-right: 5px;
+}
+
+.opsi-blog {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-blog {
+  width: 49.5%;
+  height: 20px;
+  background-color: #111727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.edit-blog a {
+  text-decoration: none;
+  font-size: 12px;
+  color: rgb(238, 237, 237);
+}
+
+.delete-blog {
+  width: 49.5%;
+  height: 20px;
+  background-color: #111727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.delete-blog a {
+  text-decoration: none;
+  font-size: 12px;
+  color: rgb(238, 237, 237);
+}
+
+.title-blog h3 a {
+  text-decoration: none;
+  color: black;
+}
+
+.title-blog p {
+  color: #514a4a;
+}
+
+.card {
+  width: 180vh;
+  height: 80vh;
+  box-shadow: 0px 0px 20px;
+}
+
+.container-card {
+  margin: auto;
+  width: 80%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  width: 55%;
+  height: 70%;
+}
+
+.container-content {
+  font-size: 13px;
+}
+
+.anchor {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.container-contact {
+  background-color: #111727;
+  margin-right: 30px;
+  height: 30px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.container-contact a {
+  text-decoration: none;
+  color: white;
+}
+
+.container-contact a:hover {
+  background-color: black;
+  height: 30px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.container-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sosmed {
+  margin-top: 50px;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sosmed a img {
+  width: 30px;
+}
+
+.profil {
+  width: 40%;
+  height: 100%;
+  box-shadow: 0px 0px 10px;
+  border-radius: 8px;
+}
+
+.profil img {
+  width: 100%;
+  height: 85%;
+  border-radius: 8px;
+}
+
+.profil-bio {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* form */
+
+.container-form {
+  width: 50vh;
+  height: 80vh;
+  font-size: 14px;
+}
+
+.form-label,
+.checkbox p {
+  font-weight: bold;
+}
+
+.start-date,
+.end-date {
+  width: 48%;
+}
+
+.form-control {
+  font-size: 14px;
+}
+
+.container-form h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form-checkbox {
+  margin-top: -13px;
+}
